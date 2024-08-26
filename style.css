@@ -36,7 +36,7 @@
 }
 
 header{
-    background: linear-gradient(to right, black, gray, lightgray);
+    /*background: linear-gradient(to right, black, gray, lightgray);*/
     height: 70px;
     top: 0;
     position: fixed;
@@ -46,6 +46,7 @@ header{
     align-items: center;
     padding: 20px 0;
     z-index: 2;
+    background: var(--violeta);
 }
 
 .menu-label, .menu-label img{
@@ -84,8 +85,6 @@ header{
     text-decoration: underline;
 }
 
-
-
 .menu a:active{
     width: 100%;
     color: black;
@@ -95,6 +94,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 section{
@@ -105,8 +105,9 @@ section{
     align-items: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    padding: 0 30px;
+    width: 90%;
 }
-
 
 .profile{
     display: flex;
