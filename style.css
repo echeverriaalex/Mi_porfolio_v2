@@ -29,59 +29,62 @@
 
     --white-text: white;
     --green-text: rgb(88, 231, 95);
+
+    --magenta: #c7318e;
+    --violeta: #8630d6;
+    --azul: #2261a5;
 }
 
 header{
-    background: linear-gradient(to right, #01022b, #32035e, #072f5a);
-    height: 80px;
+    background: linear-gradient(to right, black, gray, lightgray);
+    height: 70px;
     top: 0;
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
     z-index: 2;
 }
 
+.menu-label, .menu-label img{
+    height: 100%;
+}
 
+.menu-label, #menu-toggle{
+    display: none;
+}
 
-.menu{
+.menu-list{
     display: flex;
-    gap: 20px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 20px 30px;
 }
 
-.menu li:hover{
-    cursor: pointer;
-    width: 100%;
-    transition: all 0.3s;
-    font-size: 1.6rem;
-    /*scale: 1.2;*/
-}
-
-.menu a{
-    display: block;
+.menu-list a{
+    display: inline-block;
     width: 100%;
     text-align: center;
-    color: var(--menu-text-color);
+    color: white;
     text-decoration: none;
-    /*font-size: 1.5em;*/
-    text-shadow: 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24);
-
-    /*font-family: monospace;*/
     font-family: "Michroma", sans-serif;
     font-style: normal;
-    margin: 5px 0px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-.menu a:hover{
+.menu li:hover, .menu a{
     width: 100%;
     transition: all 0.3s;
-    font-size: 1.6rem;
+    scale: 1.2;
     text-decoration: underline;
-    text-transform: capitalize;
 }
+
+
 
 .menu a:active{
     width: 100%;
@@ -109,7 +112,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 @keyframes rote1 {
@@ -132,7 +135,7 @@ section{
 
 .img-container{
     width: 450px;
-    height: 4100%;
+    height: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -154,18 +157,20 @@ img{
 @keyframes animacion1 {
     0%{
         transform: translateY(-10px);
-        color: #4ef3dd;
+        /* color: #4ef3dd; */
     }
 
     50%{
         transform: translateY(0px);
-        color: var(--green-text);
+        /* color: var(--green-text); */
     }
 
     100%{
-        color: transparent;
+        
         transform: translateY(10px);
-        color: #f34ea2;
+        /* color: #f34ea2; 
+            color: transparent;
+        */
     }
 }
 
@@ -175,7 +180,6 @@ img{
     width: 100%;
     font-size: 2.5rem;
     font-family: "Orbitron", sans-serif;
-    color: var(--green-text);
     font-weight: 500;
     font-style: normal;
     text-align: center;
@@ -185,13 +189,14 @@ img{
     width: 100%;
     margin: 20px auto;
     padding: 10px 10px;
+    color: black;
 }
 
 .description-job, .description-job-extra{
     font-family: "Michroma", sans-serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--menu-text-color);
+    
     /*text-shadow: 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24);*/
     font-size: 18px;
     margin: 10px 0;
@@ -199,7 +204,7 @@ img{
 
 .description-job{
     text-align: center;
-    animation: slide 2s infinite alternate;
+    /* animation: slide 2s infinite alternate; */
 }
 
 @keyframes slide{
@@ -265,7 +270,7 @@ img{
     }
 
     50%{
-        transform: rotate(360deg);
+        transform: rotate(60deg);
     }
 
     to{
@@ -276,7 +281,7 @@ img{
 .social-red img{
     /*border-radius: 50%;*/
     height: 100%;
-    animation: rote 10s infinite linear alternate;
+    animation: rote 5s infinite linear alternate;
     border-radius: 50%;
 }
 
@@ -297,8 +302,9 @@ img{
     cursor: pointer;
     border: 1px solid black;
     font-family: "Michroma", sans-serif;
-    color: rgb(43, 255, 24);
-    background: black;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(var(--magenta), var(--violeta));
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -317,6 +323,7 @@ img{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    max-width: 1200px;
 }
 
 .skill{
@@ -369,17 +376,10 @@ img{
 
 
 
-.container-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .text-label{
-    font-size: 1.3rem;
+    font-size: 15px;
     font-weight: bolder;
     text-align: center;
-    color: white;
 }
 
 .section-porfolio{
@@ -398,20 +398,9 @@ article{
     height: 50%;
 }
 
-.container-flex-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container-flex-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 .contact-container{
-    width: 100%;
+    max-width: 1200px;
     /*background: green;*/
     display: flex;
     flex-direction: column;
@@ -421,25 +410,11 @@ article{
 }
 
 .contact{
-    width: 70%;
     width: 100%;
     height: 90px;
     border-radius: 10px;
     border: 2px solid green;
 }
-
-.link-block{
-    /*background: lightgreen;*/
-    width: 100%;
-    height: 100%;
-}
-
-/*
-.link-block:hover{
-    transition: all 1s;
-    border: 2px solid lightgreen;
-}
-*/
 
 
 .contact-container-img{
@@ -463,7 +438,7 @@ article{
 }
 
 .container-text p{
-    color: white;
+    color: black;
     width: 100%;
     font-size: 1rem;
     font-family: "Orbitron", sans-serif;

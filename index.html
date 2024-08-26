@@ -21,8 +21,13 @@
     <body>
         <header>
             <nav class="menu-container">
-                <ul class="menu">
-                    <li> <a href="#alex">Alex</a> </li>
+                <label for="menu-toggle" class="menu-label">
+                    <img class="icon" src="./assets/img/menu-icon2.svg">
+                    <p>Menu</p>
+                </label>
+                <input id="menu-toggle" type="checkbox">
+                <ul class="menu-list">
+                    <li> <a href="#alex">Inicio</a> </li>
                     <li> <a href="#meet-me">Sobre mi</a> </li>
                     <li> <a href="#educacion">Educación</a> </li>
                     <li> <a href="#skills">Skills</a> </li>
@@ -40,7 +45,7 @@
                         <!-- <img src="img/yo puerto madero.jpg"> -->
                     </div>
                     <div class="info-container">
-                        <h1 class="my-name padding-5">Alex Nahuel Echeverria</h1>
+                        <h1 class="my-name">Bienvenido, soy Alex!</h1>
                         <div class="block-description">
                             <p class="description-job">Desarrollador Web Back-End</p>
                             <p class="description-job-extra">(Full-Stack in progress)</p>
@@ -371,59 +376,57 @@
             </section>
 
             <section id="contacto">
-                <div class="container">
-                    <h2 class="title-section">Contáctame</h2>
-                    <div class="contact-container">
-                        <div class="contact">
-                            <a class="link-block container-flex" href="https://www.linkedin.com/in/alexnahuelecheverria/">
-                                <div class="contact-container-img">
-                                    <img src="https://www.svgrepo.com/show/110195/linkedin.svg">
-                                </div>
-                                <div class="container-text">
-                                    <p>Alex Nahuel Echeverria</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="contact">
-                            <a class="link-block container-flex" href="https://wa.me/+5492236684653">
-                                <div class="contact-container-img">
-                                    <img class="im" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2062095_application_chat_communication_logo_whatsapp_icon.svg/2048px-2062095_application_chat_communication_logo_whatsapp_icon.svg.png">
-                                </div>                               
-                                <div class="container-text">
-                                    <p>+54 223-668 4653</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="contact">
-                            <a class="link-block container-flex" href="https://www.instagram.com/alexx_echev/">
-                                <div class="contact-container-img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
-                                </div>
-                                <div class="container-text">
-                                    <p>alexx_echev</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="contact">
-                            <a class="link-block container-flex" href="https://www.facebook.com/AlexNahuelEcheverriaa/">
-                                <div class="contact-container-img">
-                                    <img src="https://i0.wp.com/ladolcevitasarasota.com/wp-content/uploads/2023/03/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png?fit=1000%2C1000&ssl=1">
-                                </div>
-                                <div class="container-text">
-                                    <p>Alex Nahuel Echeverria</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="contact">
-                            <a class="link-block container-flex" href="mailto:aleex.naahuel@outlook.com">
-                                <div class="contact-container-img">
-                                    <img src="https://cdn1.iconfinder.com/data/icons/application-file-formats/128/microsoft-outlook-512.png">
-                                </div>
-                                <div class="container-text">
-                                    <p>aleex.naahuel@outlook.com</p>
-                                </div>
-                            </a>
-                        </div>
+                <h2 class="title-section">Contáctame</h2>
+                <div class="contact-container">
+                    <div class="contact">
+                        <a class="link-block" href="https://www.linkedin.com/in/alexnahuelecheverria/">
+                            <div class="contact-container-img">
+                                <img src="https://www.svgrepo.com/show/110195/linkedin.svg">
+                            </div>
+                            <div class="container-text">
+                                <p>Alex Nahuel Echeverria</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a class="link-block" href="https://wa.me/+5492236684653">
+                            <div class="contact-container-img">
+                                <img class="im" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2062095_application_chat_communication_logo_whatsapp_icon.svg/2048px-2062095_application_chat_communication_logo_whatsapp_icon.svg.png">
+                            </div>                               
+                            <div class="container-text">
+                                <p>+54 223-668 4653</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a class="link-block" href="https://www.instagram.com/alexx_echev/">
+                            <div class="contact-container-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+                            </div>
+                            <div class="container-text">
+                                <p>alexx_echev</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a class="link-block" href="https://www.facebook.com/AlexNahuelEcheverriaa/">
+                            <div class="contact-container-img">
+                                <img src="https://i0.wp.com/ladolcevitasarasota.com/wp-content/uploads/2023/03/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png?fit=1000%2C1000&ssl=1">
+                            </div>
+                            <div class="container-text">
+                                <p>Alex Nahuel Echeverria</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a class="link-block" href="mailto:aleex.naahuel@outlook.com">
+                            <div class="contact-container-img">
+                                <img src="https://cdn1.iconfinder.com/data/icons/application-file-formats/128/microsoft-outlook-512.png">
+                            </div>
+                            <div class="container-text">
+                                <p>aleex.naahuel@outlook.com</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
