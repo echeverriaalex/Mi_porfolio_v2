@@ -35,8 +35,12 @@
     --azul: #2261a5;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
 header{
-    /*background: linear-gradient(to right, black, gray, lightgray);*/
     height: 70px;
     top: 0;
     position: fixed;
@@ -46,7 +50,7 @@ header{
     align-items: center;
     padding: 20px 0;
     z-index: 2;
-    background: var(--violeta);
+    background: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
 }
 
 .menu-label, .menu-label img{
@@ -402,33 +406,46 @@ article{
 
 .contact-container{
     max-width: 1200px;
-    /*background: green;*/
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    /*background: pink;*/
 }
 
 .contact{
-    width: 100%;
+    width: 50%;
     height: 90px;
     border-radius: 10px;
     border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+.link-block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 40px;
+}
 
 .contact-container-img{
     height: 50px;
-    width: 20%;
-    /*background: blue;*/
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .container-text{
     height: 70px;
-    /*background: red;*/
     text-align: left;
     width: 80%;
     display: flex;
