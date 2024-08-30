@@ -1,0 +1,109 @@
+@keyframes desplegar {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes guardar {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes rote1 {
+    from{
+        transform: rotate(-3deg);
+    }
+    to{
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes rainbow {
+    from{
+        background: linear-gradient(to right, #eecc0a, #4ae90c, #0aeba0);
+    }
+    to{
+        background: linear-gradient(to right, #fc2222, #ba2af3, #562bf1);
+    }
+}
+
+
+@keyframes animacion1 {
+    0%{
+        transform: translateY(-10px);
+        /* color: #4ef3dd; */
+    }
+
+    50%{
+        transform: translateY(0px);
+        /* color: var(--green-text); */
+    }
+
+    100%{
+        
+        transform: translateY(10px);
+        /* color: #f34ea2; 
+            color: transparent;
+        */
+    }
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(-20px);
+    }
+
+    to{
+        transform: translateX(20px);
+    }
+}
+
+@keyframes slide-section{
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes twinkle{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rote {
+    from{
+        transform: rotate(-20deg);
+    }
+
+    50%{
+        transform: rotate(60deg);
+    }
+
+    to{
+        transform: rotate(20deg);
+    }
+}

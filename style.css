@@ -87,6 +87,7 @@ header{
     font-style: normal;
     font-size: 16px;
     font-weight: 700;
+    animation: fade 2s linear forwards;
 }
 
 .menu li:hover, .menu a{
@@ -139,24 +140,7 @@ section .description{
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-@keyframes rote1 {
-    from{
-        transform: rotate(-3deg);
-    }
-    to{
-        transform: rotate(3deg);
-    }
-}
-
-@keyframes rainbow {
-    from{
-        background: linear-gradient(to right, #eecc0a, #4ae90c, #0aeba0);
-    }
-    to{
-        background: linear-gradient(to right, #fc2222, #ba2af3, #562bf1);
-    }
+    animation: slide-section 1s 1s ease-in-out forwards;
 }
 
 .img-container{
@@ -180,25 +164,6 @@ img{
 
 
 
-@keyframes animacion1 {
-    0%{
-        transform: translateY(-10px);
-        /* color: #4ef3dd; */
-    }
-
-    50%{
-        transform: translateY(0px);
-        /* color: var(--green-text); */
-    }
-
-    100%{
-        
-        transform: translateY(10px);
-        /* color: #f34ea2; 
-            color: transparent;
-        */
-    }
-}
 
 .my-name{
     animation: animacion1 1s infinite linear  alternate;
@@ -233,30 +198,14 @@ img{
     /* animation: slide 2s infinite alternate; */
 }
 
-@keyframes slide{
-    from{
-        transform: translateX(-20px);
-    }
 
-    to{
-        transform: translateX(20px);
-    }
-}
 
 .description-job-extra{
     text-align: center;
     animation: twinkle 1s infinite alternate;
 }
 
-@keyframes twinkle{
-    0%{
-        opacity: 0;
-    }
 
-    100%{
-        opacity: 1;
-    }
-}
 
 .welcome-message{
     width: 100%;
@@ -282,19 +231,7 @@ img{
     width: 100%;
 }
 
-@keyframes rote {
-    from{
-        transform: rotate(-20deg);
-    }
 
-    50%{
-        transform: rotate(60deg);
-    }
-
-    to{
-        transform: rotate(20deg);
-    }
-}
 
 .social-red img{
     /*border-radius: 50%;*/
