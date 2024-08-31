@@ -74,12 +74,16 @@
     }
 }
 
-@keyframes slide-section{
-    from{
-        transform: translateX(-100%);
+@keyframes slide-back{
+    0%{
+        transform: translateX(-200%);
     }
 
-    to{
+    50%{
+        transform: translateX(200%);
+    }
+
+    100%{
         transform: translateX(0);
     }
 }

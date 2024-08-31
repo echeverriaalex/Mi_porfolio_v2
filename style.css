@@ -10,11 +10,11 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-
     /* border: 1px solid red; */
 }
 
 :root{
+    --height-navBar: 70px;
     --header-width: 250px;
     --min-header-width: 30%;
     --header-height: 99%;
@@ -44,18 +44,17 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+    scroll-padding-top: var(--height-navBar);
 }
 
 header{
-    height: 70px;
+    height: var(--height-navBar);
     top: 0;
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
     z-index: 2;
     background: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
 }
@@ -103,6 +102,7 @@ header{
 }
 
 main{
+    margin-top: var(--height-navBar);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +110,7 @@ main{
 }
 
 section{
-    min-height: 100vh;
+    min-height: calc(100vh - var(--height-navBar));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,18 +139,16 @@ section .description{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    animation: slide-section 1s 1s ease-in-out forwards;
+    gap: 20px;
 }
 
 .img-container{
-    width: 450px;
-    height: 100%;
+    width: 400px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: rainbow 300ms infinite linear alternate;
+    animation: rainbow 300ms infinite linear, slide-back 2s ease-in-out forwards, fade 3s 1s linear;
     /* animation: rote 1s infinite linear alternate; */
     padding: 10px;
     background: linear-gradient(to right, #2214e2, #7415cc, #1d77d6);
@@ -161,9 +159,6 @@ img{
     max-height: 100%;
     border-radius: 10px;
 }
-
-
-
 
 .my-name{
     animation: animacion1 1s infinite linear  alternate;
@@ -386,13 +381,12 @@ article{
 
 .contact{
     width: 50%;
-    height: 90px;
+    height: 70px;
     border-radius: 10px;
     border: 2px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .link-block{
@@ -441,13 +435,35 @@ article{
 }
 
 footer{
-    background: rgb(26, 26, 26);
+    background: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120px;
     color: white;
     font-size: 17px;
     text-align: center;
+    padding: 30px 10px;
+}
+
+.footer-redes{
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.fa-brands{
+    font-size: 30px;
+    color: white;
+}
+
+footer p{
+    font-size: 12px;
+    font-family: "Orbitron", sans-serif;
+}
+
+footer h3{
+    font-size: 14px;
+    font-family: "Syncopate", sans-serif;
+    padding: 10px;
 }
