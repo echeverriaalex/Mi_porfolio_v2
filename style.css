@@ -9,8 +9,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-
-
 *{
     padding: 0;
     margin: 0;
@@ -46,13 +44,26 @@
     --magenta: #c7318e;
     --violeta: #8630d6;
     --azul: #2261a5;
+
+
+    --back: #0a0c0d; 
+    --verde-negro: #213635;
+
+    --old-gradient: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
+    --new-gradient: linear-gradient(to right, #0a0c0d, #213635, #1c5052,#1c5052 , #348e91);
+
+    /*
+        https://paletadecolores.com.ar/paleta/f2f2f2/348e91/1c5052/213635/0a0c0d/       
+        #0a0c0d, #213635, #1c5052,#1c5052 , #348e91, #f2f2f2
+    */
 }
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: var(--height-navBar);
+    /* scroll-padding-top: var(--height-navBar); */
 }
 
+/*
 header{
     height: var(--height-navBar);
     top: 0;
@@ -62,7 +73,53 @@ header{
     justify-content: center;
     align-items: center;
     z-index: 2;
-    background: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
+    background: var(--new-gradient);
+    background: var(--verde-negro);
+}
+*/
+
+#start{
+    background: #000;
+    padding: 15px;
+}
+
+.text-container{
+    width: 100%;
+}
+
+#start p{
+    margin-top: 10px;
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+}
+
+#start p span{
+    color: transparent;
+    background: var(--old-gradient);
+    background-clip: text;
+    animation: fade 2s infinite alternate-reverse;
+}
+
+
+.btn-meet-me{
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px white solid;
+    padding: 20px 30px;
+}
+
+
+
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: var(--verde-negro);
+    z-index: 10;
 }
 
 .menu-label, .menu-label img{
@@ -75,7 +132,7 @@ header{
 
 .menu-list{
     display: flex;
-    height: 100%;
+    height: 90%;
     justify-content: space-around;
     align-items: center;
     gap: 60px;
@@ -95,20 +152,18 @@ header{
     animation: fade 2s linear forwards;
 }
 
-.menu li:hover, .menu a{
-    width: 100%;
-    transition: all 0.3s;
-    scale: 1.2;
-    text-decoration: underline;
-}
-
-.menu a:active{
-    width: 100%;
+.menu-list a:active{
     color: black;
 }
 
+.menu-list a:hover{
+    /*scale: 1.2;*/
+    text-decoration: underline;
+}
+
+
 main{
-    margin-top: var(--height-navBar);
+    /*margin-top: var(--height-navBar);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +171,8 @@ main{
 }
 
 section{
-    min-height: calc(100vh - var(--height-navBar));
+    /*min-height: calc(100vh - var(--height-navBar));*/
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,9 +180,16 @@ section{
     gap: 20px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    position: relative;
 }
+
+
+#inicio{
+    background: linear-gradient(40deg, #1c5052 , #348e91);
+}
+
+
 
 .title-section{
     text-align: center;
@@ -168,7 +231,7 @@ img{
 
 .my-name{
     animation: animacion1 1s infinite linear  alternate;
-    color: black;
+    color: rgb(216, 203, 203);
     width: 100%;
     font-size: 2.5rem;
     font-family: "Orbitron", sans-serif;
@@ -442,6 +505,7 @@ article{
 
 footer{
     background: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
+    background: var(--verde-negro);
     display: flex;
     flex-direction: column;
     justify-content: center;

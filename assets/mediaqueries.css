@@ -13,6 +13,14 @@
     }
     */
 
+    .menu-container{
+        height: var(--height-navBar);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .menu-label{
         display: flex;
         width: 40px;
@@ -42,7 +50,8 @@
         border: 2px solid black;
         border-top: 0;
         border-radius: 0 0 15px 15px;
-        background: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
+        /*background: linear-gradient(to right, #c7318e, #8630d6, #2261a5);*/
+        background: var(--verde-negro);
     }
 
     #menu-toggle:checked + .menu-list{
