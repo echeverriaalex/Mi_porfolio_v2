@@ -78,13 +78,15 @@ header{
 }
 */
 
+/* Pantalla de bienvenida */
+
 #start{
     background: #000;
-    padding: 15px;
+    min-height: 100vh;
 }
 
 .text-container{
-    width: 100%;
+    width: fit-content;
 }
 
 #start p{
@@ -92,16 +94,17 @@ header{
     font-size: 60px;
     color: white;
     font-weight: 800;
-    padding: 10px;
+    width: fit-content;
 }
 
-#start p span{
+.my-name-start{
+    font-size: 60px;
     color: transparent;
     background: var(--old-gradient);
     background-clip: text;
     animation: fade 2s infinite alternate-reverse;
+    width: fit-content;
 }
-
 
 .btn-meet-me{
     margin-top: 40px;
@@ -113,6 +116,7 @@ header{
 }
 
 
+/* NAV y sections */
 
 nav{
     width: 100%;
@@ -120,6 +124,8 @@ nav{
     top: 0;
     background: var(--verde-negro);
     z-index: 10;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-label, .menu-label img{
@@ -135,8 +141,9 @@ nav{
     height: 90%;
     justify-content: space-around;
     align-items: center;
-    gap: 60px;
-    padding: 20px 30px;
+    gap: 40px;
+    padding: 20px 10px;
+    max-width: 900px;
 }
 
 .menu-list a{
@@ -161,7 +168,6 @@ nav{
     text-decoration: underline;
 }
 
-
 main{
     /*margin-top: var(--height-navBar);*/
     display: flex;
@@ -171,8 +177,9 @@ main{
 }
 
 section{
-    /*min-height: calc(100vh - var(--height-navBar));*/
+    /* margin-top:  var(--height-navBar); */
     min-height: 100vh;
+    /* min-height: calc(100vh - var(--height-navBar)); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,6 +189,11 @@ section{
     border-bottom: 1px solid black;
     width: 100%;
     position: relative;
+    padding: 20px;
+}
+
+section div{
+    width: 100%;
 }
 
 
@@ -212,7 +224,8 @@ section .description{
 }
 
 .img-container{
-    width: 400px;
+    width: 30%;
+    max-width: 300px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -227,6 +240,13 @@ img{
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
+}
+
+.info-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .my-name{
@@ -295,13 +315,12 @@ img{
     width: 100%;
 }
 
-
-
 .social-red img{
     /*border-radius: 50%;*/
     height: 100%;
     animation: rote 5s infinite linear alternate;
     border-radius: 50%;
+    
 }
 
 .container-button{
@@ -475,6 +494,7 @@ article{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: fit-content;
 }
 
 .container-text{
