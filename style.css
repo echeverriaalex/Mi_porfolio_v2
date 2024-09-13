@@ -22,7 +22,6 @@
     --header-width: 250px;
     --min-header-width: 30%;
     --header-height: 99%;
-    
     --main-width: 80%;
     --max-main-width: 70%;
     
@@ -33,22 +32,16 @@
     --main-background-color: rgba(51, 51, 51, 0.918);
     --body-color-black:  rgb(0, 0, 0);
     --body-color-gray: rgb(104, 104, 104);
-
     --menu-text-color: rgb(88, 231, 95);
     --my-name-color: rgb(7, 7, 7);
     --main-text-color: white;
-
     --white-text: white;
     --green-text: rgb(88, 231, 95);
-
     --magenta: #c7318e;
     --violeta: #8630d6;
     --azul: #2261a5;
-
-
     --back: #0a0c0d; 
     --verde-negro: #213635;
-
     --old-gradient: linear-gradient(to right, #c7318e, #8630d6, #2261a5);
     --new-gradient: linear-gradient(to right, #0a0c0d, #213635, #1c5052,#1c5052 , #348e91);
 
@@ -86,7 +79,11 @@ header{
 }
 
 .text-container{
-    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #start p{
@@ -224,7 +221,7 @@ section .description{
 }
 
 .img-container{
-    width: 30%;
+    width: 40%;
     max-width: 300px;
     border-radius: 10px;
     display: flex;
@@ -247,11 +244,12 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    max-width: 500px;
 }
 
 .my-name{
     animation: animacion1 1s infinite linear  alternate;
-    color: rgb(216, 203, 203);
     width: 100%;
     font-size: 2.5rem;
     font-family: "Orbitron", sans-serif;
@@ -271,7 +269,6 @@ img{
     font-family: "Michroma", sans-serif;
     font-weight: 900;
     font-style: italic;
-    
     /*text-shadow: 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24);*/
     font-size: 18px;
     margin: 10px 0;
@@ -282,14 +279,10 @@ img{
     /* animation: slide 2s infinite alternate; */
 }
 
-
-
 .description-job-extra{
     text-align: center;
     animation: twinkle 1s infinite alternate;
 }
-
-
 
 .welcome-message{
     width: 100%;
@@ -306,21 +299,22 @@ img{
 .redes{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    height: 60px;
+    height: 70px;
+    max-width: 450px;
 }
 
 .social-red a{
-    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
 }
 
-.social-red img{
-    /*border-radius: 50%;*/
-    height: 100%;
-    animation: rote 5s infinite linear alternate;
+.social-red a img{
     border-radius: 50%;
-    
+    animation: rote 5s infinite linear alternate;
 }
 
 .container-button{
@@ -354,8 +348,16 @@ img{
 .container-education{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+}
+
+.education{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .container-education .title{
