@@ -169,17 +169,23 @@
     }
 
     .section-skills{
+
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 10px;
+
+        /*
         display: unset;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        */
 
         /* background: gray; */
     }
 
     .skill{
-        width: 80px;
+        /*width: 80px;*/
         padding: 5px;
         display: flex;
         justify-content: center;

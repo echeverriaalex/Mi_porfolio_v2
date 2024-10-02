@@ -7,6 +7,39 @@
     }
 }
 
+/*
+@keyframes ghost {
+    from{
+        text-shadow: 0 0 10px green;
+    }
+
+    to{
+        text-shadow: 0 0 10px lightgreen;
+    }
+}
+    */
+
+@keyframes color {
+    from{
+        color: black;
+        /*
+        -webkit-text-stroke-width: 1px;
+        
+        -webkit-text-stroke-color: white;
+        opacity: 1;
+        */
+    }
+
+    to{
+        color: transparent;
+        /*
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: white;
+        opacity: 1;
+        */
+    }
+}
+
 @keyframes guardar {
     from{
         transform: translateY(-100%);
@@ -19,9 +52,11 @@
 @keyframes fade {
     from{
         opacity: 0;
+        /* text-shadow: greenyellow 1px 0px 10px; */
     }
     to{
         opacity: 1;
+        /* text-shadow: greenyellow 1px 0px 10px; */
     }
 }
 
