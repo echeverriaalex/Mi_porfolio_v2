@@ -1,6 +1,5 @@
 @media(max-width: 882px){
     .text-container{
-        
         padding: 20px;
     }
 
@@ -106,7 +105,6 @@
         font-family: "Ga Maamli", sans-serif;
         font-weight: 400;
         font-style: normal;
-        
         text-shadow: 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24), 0 0 20px rgb(43, 255, 24);
         */
     }
@@ -157,7 +155,6 @@
         height: 40px;
     }
 
-
     .container-education{
     }
 
@@ -169,10 +166,8 @@
     }
 
     .section-skills{
-
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         gap: 10px;
-
         /*
         display: unset;
         display: flex;
@@ -180,7 +175,6 @@
         align-items: center;
         gap: 10px;
         */
-
         /* background: gray; */
     }
 
@@ -228,15 +222,13 @@
         align-items: center;
         */
     }
-    
-    
+
     .contact{
         width: 100%;
         padding: 10px 5px;
         display: flex;
         justify-content: start;
         align-items: center;
-        
     }
 
     .link-block{
